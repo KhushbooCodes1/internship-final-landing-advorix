@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Program</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Advorix Technologies</h2>
+      <nav>
+        <ul id="menu">
+          <li><a href="#program">Program</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </nav>
+    </header>
+    <section class="hero">
+      <h1>Kickstart Your Career 🚀</h1>
+      <p>Join our internship program and gain real-world experience</p>
+      <button class="btn">Apply Now</button>
+    </section>
+    <section id="program" class="grid grid-3">
+      <div class="card hidden">
+        <h3>Duration</h3>
+        <p>8 Weeks intensive training</p>
+      </div>
+      <div class="card hidden">
+        <h3>Mentorship</h3>
+        <p>Industry experts guide you</p>
+      </div>
+      <div class="card hidden">
+        <h3>Certification</h3>
+        <p>Get recognized certificate</p>
+      </div>
+    </section>
+    <section id="pricing" class="pricing grid grid-3">
+      <div class="card hidden">
+        <h3>Basic</h3>
+        <p>$49</p>
+      </div>
+      <div class="card hidden">
+        <h3>Pro</h3>
+        <p>$99</p>
+      </div>
+      <div class="card hidden">
+        <h3>Premium</h3>
+        <p>$149</p>
+      </div>
+    </section>
+    <section id="testimonials" class="grid grid-3">
+      <div class="card testimonial hidden">"Amazing experience!"</div>
+      <div class="card testimonial hidden">"Helped me land a job"</div>
+      <div class="card testimonial hidden">"Highly recommend"</div>
+    </section>
+    <section id="faq">
+      <div class="faq-item hidden">
+        <h4 onclick="toggleFAQ(this)">What is the duration?</h4>
+        <p style="display: none">8 weeks</p>
+      </div>
+      <div class="faq-item hidden">
+        <h4 onclick="toggleFAQ(this)">Is it remote?</h4>
+        <p style="display: none">Yes</p>
+      </div>
+    </section>
+    <section class="cta">
+      <h2>Ready to Start?</h2>
+      <form onsubmit="return validateForm();">
+        <input type="text" id="name" placeholder="Your Name" />
+        <div id="nameError" class="error"></div>
+        <input type="email" id="email" placeholder="Email" />
+        <div id="emailError" class="error"></div>
+        <button class="btn">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@Advorixtech.com</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p>Home</p>
+        <p>Program</p>
+      </div>
+      <div class="socials">
+        <h4>Follow</h4>
+        <span>🌐</span><span>🐦</span><span>📸</span>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
